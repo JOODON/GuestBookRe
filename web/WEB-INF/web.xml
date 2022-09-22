@@ -51,4 +51,6 @@
         <filter-name>encodingFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
+
+<!--    //폼xml부분 수정해야되요!-->
 </web-app>

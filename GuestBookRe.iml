@@ -25,9 +25,6 @@
         <fileset id="fileset2" name="Spring Application Context (2)" removed="false">
           <file>file://$MODULE_DIR$/web/WEB-INF/applicationContext.xml</file>
           <file>file://$MODULE_DIR$/web/WEB-INF/dispatcher-servlet.xml</file>
-          <file>file://$MODULE_DIR$/src/main/java/config/ApplicationConfig.java</file>
-          <file>file://$MODULE_DIR$/src/main/java/config/DBConfig.java</file>
-          <file>file://$MODULE_DIR$/src/main/java/config/WebMvcContextConfiguration.java</file>
         </fileset>
       </configuration>
     </facet>
