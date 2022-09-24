@@ -17,7 +17,7 @@ public class GuestBookController {
     GuestbookService guestbookService;
 
     @GetMapping(path = "/list")
-    public String list(@RequestParam(name = "start",required = false,defaultValue = "0")int start, ModelMap model
+    public String list(@RequestParam(name="start",required = false,defaultValue = "0")int start, ModelMap model
     ){
         //start로 시작하는 방명록 구하기
         List<Guestbook> list=guestbookService.getGuestbooks(start);
@@ -32,6 +32,7 @@ public class GuestBookController {
         for (int i=0; i < pageCount; i++){
             pageStartList.add(i*GuestbookService.LIMIT);
         }
+
         model.addAttribute("list",list);
         model.addAttribute("count",count);
         model.addAttribute("pageStartList",pageStartList);
